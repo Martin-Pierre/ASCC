@@ -11,11 +11,28 @@ p strong {color: #555;}
 .colored_box p strong {color: #FFF;}
 p {margin-bottom: 15px;}
 h1 {font-size:2.1em;}
-h2 {font-size:1.9em;}
 h3 {font-size:1.7em;}
 h4 {font-size:1.5em;}
 h5 {font-size:1.3em;}
 h6 {font-size:.9em;color: #222;text-transform: uppercase;font-weight: 600;letter-spacing: 1px;}
+
+h3 b{ color: red; }
+h6 p {
+	font-size:1.6em;
+	text-decoration: underline;
+	font-weight: bold;
+	color: #43464c;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 120px;
+}
 
 h1 + p,h2 + p,h3 + p,h4 + p,h5 + p,h6 + p {margin-top:-10px;}
 
@@ -148,7 +165,7 @@ padding:4px 0;
 }
 
 #header .rays {
-background:url(elements_decors/_global/rays.png) 50% 0 no-repeat;
+background:url(../elements_decors/_global/rays.png) 50% 0 no-repeat;
 }
 
 #header .header-area {
@@ -159,7 +176,7 @@ padding:38px 0 33px;
 }
 
 #main {
-background:url(elements_decors/bg-div-main.jpg) 0 0 repeat-x;
+background:url(../elements_decors/bg-div-main.jpg) 0 0 repeat-x;
 display:table-footer-group;
 position:relative;
 width:100%;
@@ -1231,10 +1248,17 @@ ul.portfolio li.active {
     box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
 }
 
-
 #actualitesBlue {
     float: right;
     margin-top: 20px;
     width: 50%;
     min-height: 250px
+}
+
+#alertes {
+    color: red;
+}
+
+#actuaSlider {
+	min-height: 280px
 }
