@@ -1,0 +1,5 @@
+/photo/Aïkido.jpg	/actualites/Aïkido.pdf	L’Aïkido est un art martial japonais, mixte, sans compétition, venez essayer
+/photo/odyssea.jpg	/actualites/odyssea.pdf	venez courrir ou marcher pour une bonne cause
+/photo/Aïkido.jpg	/actualites/Aïkido.pdf	L’Aïkido est un art martial japonais, mixte, sans compétition, venez essayer
+/photo/odyssea.jpg	/actualites/odyssea.pdf	venez courrir ou marcher pour une bonne cause
+/photo/Aïkido.jpg	/actualites/Aïkido.pdf	L’Aïkido est un art martial japonais, mixte, sans compétition, venez essayer

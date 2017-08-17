@@ -1,0 +1,31 @@
+siege
+  Aïkido	Aïkido.pdf	aïkido.jpg 
+  Boxe francaise/savate forme	boxe.pdf	savate.jpg	
+  Cardio/fitness	cardio.pdf	cardio.jpg	siege
+  Cuisses-Abdo-Fessiers	caf.pdf	caf.jpg	
+  Gymnastique Siège	gym.pdf	gym siege.jpg
+autre
+  Ju-jitsu/Judo	jujitsu.pdf	jujitsu.png
+  VéloCoop	velocoop.pdf	velocoop.jpg
+  Yoga	Yoga.pdf	yoga.jpg
+  Zumba	zumba.pdf	zumba.jpg
+  Club-Photo	club photo.pdf	club-photo.jpg
+  Jeux d'échecs	echecs.pdf	jeux-echecs.jpg
+  Subvention Ascc	remboursement_reseau.pdf 	subvention.png
+  Badminton	badminton.pdf	badminton.jpg
+  Squash	squash.pdf	squash.jpg
+  Club Med Gym	club_med_gym.pdf	cmg.jpg
+  Football	foot.pdf	football.jpg
+  Forest Hill	forest_hill.pdf	forest-hill.jpg
+  Piscine Nanterre	natation.pdf	natation.jpg
+encore autre
+  Volley-Ball	volley.pdf	volleyball.jpg
+  Bowling	bowling.pdf	bowling.png
+  Golf	golf.pdf	golf.png
+  Jogging	jogging.pdf	jogging.jpg
+  Plongée sous-marine	plongee.pdf	plongee.jpg
+  Randonnée	randonnée.pdf	randonnee.png
+  Randonnée sportive	randonnée_sportive.pdf	randonnee-sportive.png
+  Ski Alpin	ski.pdf	ski.jpg
+  Chorale	chorale.pdf	chorale.jpg
+  Planning salle	planning.pdf	planning.jpg
