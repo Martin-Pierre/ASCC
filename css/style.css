@@ -1,0 +1,1240 @@
+
+/*----------------------------*/
+/* 1. General Typography   police des actualites
+/*----------------------------*/
+
+a {outline:none;}
+a:hover {text-decoration:underline;}
+h1, h2, h3, h4, h5, h6, p, ul, ol {margin: 0 0 20px 0;font-weight: normal;color: #0badcd;}
+p, ul, ol {color: #666;}
+p strong {color: #555;}
+.colored_box p strong {color: #FFF;}
+p {margin-bottom: 15px;}
+h1 {font-size:2.1em;}
+h2 {font-size:1.9em;}
+h3 {font-size:1.7em;}
+h4 {font-size:1.5em;}
+h5 {font-size:1.3em;}
+h6 {font-size:.9em;color: #222;text-transform: uppercase;font-weight: 600;letter-spacing: 1px;}
+
+h1 + p,h2 + p,h3 + p,h4 + p,h5 + p,h6 + p {margin-top:-10px;}
+
+p + h1,p + h2,p + h3,p + h4,p + h5,p + h6 {padding-top: 20px;}
+
+#main h1 + ul,
+#main h2 + ul,
+#main h3 + ul,
+#main h4 + ul,
+#main h5 + ul,
+#main h6 + ul,
+#main h1 + ol,
+#main h2 + ol,
+#main h3 + ol,
+#main h4 + ol,
+#main h5 + ol,
+#main h6 + ol {margin-top:-5px;}
+
+#main ul + h1,
+#main ul + h2,
+#main ul + h3,
+#main ul + h4,
+#main ul + h5,
+#main ul + h6,
+#main ol + h1,
+#main ol + h2,
+#main ol + h3,
+#main ol + h4,
+#main ol + h5,
+#main ol + h6 {padding-top:10px;}
+
+
+
+/*---------------------------------------------------------------*/
+/* entete bleue
+/*---------------------------------------------------------------*/
+
+
+
+
+#header .logo {float:left;width:10%; height: 30px;margin-left: 20px;outline:medium;}
+#header .toolbar-left a,#header .toolbar-right a {text-decoration:none;}
+#header .toolbar-left li,#header .toolbar-right li {color:#575C60;}
+
+.post_title h2 a {color:#222 !important;text-decoration:none !important;}
+
+
+
+/*----------------------------*/
+/* 1. Main Navigation
+/*----------------------------*/
+
+#menu-main-nav a,#sub_nav a,#wrapper .tabset a,#footer_bottom a,.callout_button:hover {text-decoration:none;}
+#menu-main-nav {list-style:none;margin:0;padding:0;list-style:none;float:right;}
+#menu-main-nav a {outline: none;}
+#menu-main-nav li {float:left;padding:5px 31px 12px 13px;position:relative;vertical-align:top;height:1%;margin-right: 2px;}
+#menu-main-nav ul li {background: none !important;}
+#menu-main-nav li.parent:hover {position:relative;}
+#menu-main-nav li.parent li.parent:hover {background:none !important;}
+#menu-main-nav li.parent li.parent li.parent:hover {background:none !important;}
+#menu-main-nav li strong {text-transform:uppercase;display:block;font-size:13px;letter-spacing: 0.6px;font-weight:800;}
+#menu-main-nav a {display:block;}
+#menu-main-nav a:hover {background-position:0 0;text-decoration:none;}
+#menu-main-nav .drop {width:236px;padding:0 1px 0 1px;position:absolute;left:-1px;top:52px;display:none;z-index:999;}
+#menu-main-nav .sub-menu {display: none;}
+#menu-main-nav .drop li.current-menu-item,
+#menu-main-nav .drop li.current_page_ancestor,
+#menu-main-nav .drop li.hover {z-index:10;}
+#menu-main-nav .drop .t,
+#menu-main-nav .drop .b {height:10px;overflow:hidden;}
+#menu-main-nav .drop .c {width:100%;}
+#menu-main-nav .drop ul {margin:0;padding:5px 0 8px;width:236px;list-style:none;}
+#menu-main-nav .drop ul li {float:none;padding:0;position:relative;height:1%;padding:0 8px;background:none;}
+#menu-main-nav .drop ul a {display:block;height:1%;width: 220px;}
+#menu-main-nav .drop ul a span {display:block;padding:7px 13px;height:1%;cursor:pointer;}
+#menu-main-nav .drop ul .drop {top:0;left:236px;}
+#menu-main-nav .drop ul .drop ul a {background:none;}
+#menu-main-nav .drop ul .drop ul a span {background:none;}
+#menu-main-nav .drop ul .drop ul .drop a,
+#menu-main-nav .drop ul .drop ul .drop a span {background:none !important;}
+#menu-main-nav li:hover .drop,
+#menu-main-nav li.hover .drop {display:block;}
+#menu-main-nav li:hover .drop ul .drop,
+#menu-main-nav li.hover .drop ul .drop {display:none;}
+#menu-main-nav li:hover .drop ul li:hover .drop,
+#menu-main-nav li.hover .drop ul li.hover .drop {display:block;}
+#menu-main-nav li.current-menu-parent li a span, #menu-main-nav li.current-menu-item li a span, #menu-main-nav li.current_page_ancestor li a span {text-decoration:none;color:#999;}
+#menu-main-nav .drop ul li.current-menu-item ul li a,
+#menu-main-nav .drop ul li.current-menu-item ul li a span,
+#menu-main-nav li .sub-menu li .sub-menu li .sub-menu li a span {background: none !important;}
+
+/*----------------------------*/
+/* 4. bas de page
+/*----------------------------*/
+#footer {width:100%;position:relative;padding-top:40px;}
+#footer .footer-area {width:980px;position:relative;margin:0 auto;}
+#footer .footer-wrapper {width:980px;overflow:hidden;}
+#footer .footer-holder {width:100%;overflow:hidden;padding:45px 0 25px 6px;}
+#footer .one_fourth, #footer .one_fourth_last {float:left !important;width:227px !important;margin-right:23px !important;}
+#footer .one_fourth_last {margin-right:0px !important;float:right !important;}
+#footer_bottom {background:#004668 url(../elements_decors/bg-footer-bottom.jpg) repeat-x !important;color: #868686 !important;}
+.footer-holder a {color:#98DCE9 !important;}
+.footer-holder a:hover {color:#FFF !important;}
+#footer .blogroll li{color:#98DCE9 !important;}
+.footer-holder a,#footer_bottom a {text-decoration:none;color:#575C60;}
+#footer h3 {text-transform:uppercase;color:#fff;display:block;font-size:13px;letter-spacing: 0.5px;border-bottom: 1px solid #3E4055;padding-bottom: 7px;margin-bottom: 16px;font-weight: bold;}
+/*#footer {background:#0078AF url(../elements_decors/bg-footer.jpg) repeat-x !important;}
+/*#footer_bottom {background:#004668 url(../elements_decors/bg-footer-bottom.jpg) repeat-x !important;color: #868686 !important;}
+
+/*----------------------------*/
+/* 1. General Layout
+/*----------------------------*/
+#wrapper {
+width:100%;
+display:table;
+background:#F4F4F2;
+}
+
+#wrapper #header {
+display:block;
+}
+
+.top-block .top-holder {
+width:980px;
+font-size:10px;
+min-height:4px;
+height:auto;
+margin:0 auto;
+padding:4px 0;
+}
+
+#header .rays {
+background:url(elements_decors/_global/rays.png) 50% 0 no-repeat;
+}
+
+#header .header-area {
+/*mbride*/
+/*width:980px;*/
+margin:0 auto;
+padding:38px 0 33px;
+}
+
+#main {
+background:url(elements_decors/bg-div-main.jpg) 0 0 repeat-x;
+display:table-footer-group;
+position:relative;
+width:100%;
+}
+
+#main .main-area {
+width:980px;
+margin:0 auto;
+padding:43px 0 5px;
+}
+
+#main .utility-area {
+padding-top:0;
+}
+
+.tools .place {
+float:right;
+}
+
+.main-holder {
+height:1%;
+overflow:hidden;
+padding-top:45px;
+}
+
+.carousel-holder {
+width:315px !important;
+}
+
+.top-block .top-holder:after,#header .header-area:after {
+clear:both;
+display:block;
+content:"";
+}
+
+#tt-boxed-layout {
+width:90%;
+margin:0 auto;
+max-width:1200px;
+-moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+-webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+/*-----------------------------------------------------------------*/
+/* 01. Global Styles
+/*-----------------------------------------------------------------*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,
+pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,
+s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,
+li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}
+
+body {
+line-height:1;background:#f4f4f2;font-family:"helvetica neue",Helvetica,Arial,
+Verdana,sans-serif;font-size:1.2em;line-height:20px;color:#666;
+min-width:1003px;margin:0;}
+
+video,iframe,object,img{   max-width:100%;}
+blockquote,q {quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after {content:none;}
+ins {text-decoration:none;}
+del {text-decoration:line-through;}
+table {border-collapse:collapse;border-spacing:0;}
+* {font-size:100.01%;}
+html {font-size:62.5%;margin:0;padding:0;}
+
+
+/*---------------------------------------------------------------*/
+/* NAVIGATION
+/*---------------------------------------------------------------*/
+#menu-main-nav li strong {color:#FFF !important;}
+#menu-main-nav a span {color:#98DCE9 !important;} /* link color parent level  
+
+/*---------------------------------------------------------------*/
+/* couleur txte bas de page
+/*---------------------------------------------------------------*/
+.top-block, .top-block a, #header .sub-nav li, #header .sub-nav2 li {color:#DDD !important;}
+.top-block a:hover {color:#FFF !important;}
+/*.top-block .sub-nav ul li, .top-block .sub-nav2 ul li {background:url(../elements_decors/separator-toolbar.png) 0 50% no-repeat !important;}
+
+#mc_signup .mc_required, .mc_required, #mc-indicates-required {color:#98DCE9 !important;}
+
+/*=============================================
+	GLOBAL CONFIGURATION
+ =============================================*/
+.portfolio-items li,
+.portfolio-items h3,
+.portfolio-items p,
+.portfolio-items a{	margin: 0;}
+
+/* Portfolio Styles */
+.portfolio-container{
+	width: 960px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.portfolio-items {
+	margin: 10px 0;
+}
+/* Portfolio list */
+.portfolio-items li{
+	display: inline-block;
+	margin: 10px;
+	float: left;
+	list-style: none;
+	position: relative;
+}
+/* Portfolio image */
+.portfolio-items li img{
+	display: block;
+	width: 201px;
+	height: 150px;
+	padding: 6px;
+	background: #eee;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+}
+
+
+/*=============================================
+	Bouton des icone section
+ =============================================*/
+ /*Default (blue)
+ -----------------------*/
+.pf_button {
+display: inline-block;
+padding: 3px 13px !important;
+margin: 1px 5px !important;
+margin-right: 0 !important;
+border: solid 1px #000;
+float: right;
+/* Button background */
+background: #7abcff;
+background: -moz-linear-gradient(top,  #7abcff 0%, #60abf8 44%, #4096ee 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee));
+background: -webkit-linear-gradient(top,  #7abcff 0%,#60abf8 44%,#4096ee 100%);
+background: -o-linear-gradient(top,  #7abcff 0%,#60abf8 44%,#4096ee 100%);
+background: -ms-linear-gradient(top,  #7abcff 0%,#60abf8 44%,#4096ee 100%);
+background: linear-gradient(top,  #7abcff 0%,#60abf8 44%,#4096ee 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 );
+/*Button text*/
+color: #eee;	
+font: 100% Arial, Helvetica, sans-serif;
+text-align: center;
+text-shadow: 0 1px 0 rgba(55,121,188,.5);
+text-decoration: none !important;
+vertical-align: middle;
+zoom:1;}
+
+/*-----------------------------------------------------------------*/
+/* 19. Internet Explorer
+/*-----------------------------------------------------------------*/
+.ie .home-main-area .content_full_width {padding-top:50px !important;}
+.ie8 #header .custom-logo {width:200px !important;}
+
+.ie8 .home-flash-slider:before{
+   clear: both;
+   content: ' ';
+   display: block;
+   font-size: 0;
+   line-height: 0;
+   visibility: hidden;
+   width: 0;
+   height: 0;
+}
+
+.ie8 #wrapper #header .rays,
+.ie8 #wrapper #header .big-banner #header .header-holder{
+   max-height:inherit;
+   background:none !important;
+}
+
+.ie8 #header {position: relative; z-index: 9499;}
+.ie8 .ui-accordion {margin-left:-1px;}
+
+
+/* menu */
+.ie8 #menu-main-nav {position: relative; z-index: 9499;}
+
+
+/* blog */
+.ie8 .post_comments a {text-decoration: none !important;}
+
+
+/* homepage */
+.ie8 .home-banner-wrap {width:940px;height:419px;margin:87px auto 0 auto;}
+.ie8 .home-banner-main {width: 350px;top:55px;left:45px;position:absolute;}
+.ie8 .home-bnr-jquery .home-banner-sub {background: none !important;}
+.ie8 .home-flash-slider {height:400px;}
+.ie8 .flash-main-area .content_full_width {margin-top:-50px !important;}
+.ie8 .loveie{float:left;padding-top:4000px;}
+
+
+/* footer */
+.ie8 #footer_bottom .top-footer { *width:40px;}
+.ie8 #footer_bottom #foot_right ul{}
+.ie8 #footer p {padding-right:10px;}
+
+
+*display:inline;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.1), inset 0 1px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(255,255,255,.3);
+-moz-box-shadow: 0 1px 0 rgba(0,0,0,.1), inset 0 1px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(255,255,255,.3);
+box-shadow: 0 1px 0 rgba(0,0,0,.1), inset 0 1px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(255,255,255,.3);
+}
+
+/*=============================================
+	CAPTIONS icone "sections"
+ =============================================*/
+ 
+.portfolio-items li div.caption h3,
+.portfolio-items li div.caption2 h3,
+.portfolio-items li div.caption3 h3,
+.portfolio-items li div.caption4 h3,
+.portfolio-items li div.caption5 h3,
+.portfolio-items li div.caption6 h3,
+.portfolio-items li div.caption7 h3,
+.portfolio-items li div.caption8 h3,
+.portfolio-items li div.caption9 h3,
+.portfolio-items li div.caption10 h3,
+.portfolio-items li div.caption11 h3,
+.portfolio-items li div.caption12 h3,
+.portfolio-items li div.caption13 h3,
+.portfolio-items li div.caption14 h3,
+.portfolio-items li div.caption15 h3{
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #aaa;
+	text-shadow: 1px 1px 1px #303857;
+}
+/* */
+.portfolio-items li div.caption,
+.portfolio-items li div.caption2,
+.portfolio-items li div.caption3,
+.portfolio-items li div.caption4,
+.portfolio-items li div.caption5,
+.portfolio-items li div.caption6,
+.portfolio-items li div.caption7,
+.portfolio-items li div.caption8,
+.portfolio-items li div.caption9,
+.portfolio-items li div.caption10,
+.portfolio-items li div.caption11,
+.portfolio-items li div.caption12,
+.portfolio-items li div.caption13,
+.portfolio-items li div.caption14,
+.portfolio-items li div.caption15{
+	display: block;
+	background: #000;
+	background: rgba(0,0,0, 0.7);
+	color: #fff;
+	font-family: "Helvetica", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 11px;
+	padding: 10px;
+	position: absolute;
+	overflow: hidden;
+	text-shadow: 1px 1px 1px #303857;
+	opacity: 0;/
+	filter: alpha(opacity = 0);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+/* Portfolio caption sizes on hover action */
+.portfolio-items li:hover div.caption,
+.portfolio-items li:hover div.caption2,
+.portfolio-items li:hover div.caption3,
+.portfolio-items li:hover div.caption4,
+.portfolio-items li:hover div.caption5,
+.portfolio-items li:hover div.caption6,
+.portfolio-items li:hover div.caption7,
+.portfolio-items li:hover div.caption8,
+.portfolio-items li:hover div.caption9,
+.portfolio-items li:hover div.caption10,
+.portfolio-items li:hover div.caption11,
+.portfolio-items li:hover div.caption12,
+.portfolio-items li:hover div.caption13,
+.portfolio-items li:hover div.caption14,
+.portfolio-items li:hover div.caption15{
+	width: 181px;
+	height: 130px;
+	/*opacity*/
+	opacity: 1;/* all browsers */
+	filter: alpha(opacity = 80); /* IE fix */
+}
+
+ 
+/* Portfolio caption (default style)
+--------------------------------------------*/
+.portfolio-items li div.caption{
+	top: 7px; /* direction Y */
+	right: 7px;/* direction X */
+	width: 0;
+	height: 0;
+}
+
+/* Portfolio caption2
+--------------------------------------------*/
+.portfolio-items li div.caption2{
+	top: 7px; /* direction Y */
+	left: 7px;/* direction X */
+	width: 0;
+	height: 0;
+}
+
+/* Portfolio caption3
+--------------------------------------------*/
+.portfolio-items li div.caption3{
+	bottom: 7px; /* direction Y */
+	right: 7px;/* direction X */
+	width: 0;
+	height: 0;
+}
+
+/* Portfolio caption4
+--------------------------------------------*/
+.portfolio-items li div.caption4{
+	bottom: 7px; /* direction Y */
+	left: 7px;/* direction X */
+	width: 0;
+	height: 0;
+}
+
+/* Portfolio caption5
+--------------------------------------------*/
+.portfolio-items li div.caption5{
+	top: 7px; /* direction Y */
+	left: 7px;/* direction X */
+	width: 0;
+	height: 130px;
+}
+
+/* Portfolio caption6
+--------------------------------------------*/
+.portfolio-items li div.caption6{
+	top: 7px; /* direction Y */
+	right: 7px;/* direction X */
+	width: 0;
+	height: 130px;
+}
+
+/* Portfolio caption7
+--------------------------------------------*/
+.portfolio-items li div.caption7{
+	top: 7px; /* direction Y */
+	left: 7px;/* direction X */
+	width: 181px;
+	height: 0;
+}
+
+/* Portfolio caption8
+--------------------------------------------*/
+.portfolio-items li div.caption8{
+	bottom: 7px; /* direction Y */
+	right: 7px;/* direction X */
+	width: 181px;
+	height: 0;
+}
+
+/* Portfolio caption9
+--------------------------------------------*/
+.portfolio-items li div.caption9{
+	bottom: 7px; /* direction Y */
+	right: 7px;/* direction X */
+	width: 181px;
+	height: 130px;
+}
+
+/* Portfolio caption10
+--------------------------------------------*/
+.portfolio-items li div.caption10{
+	bottom: 7px; /* direction Y */
+	right: 7px;/* direction X */
+	width: 0px;
+	height: 0px;
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+}
+
+.portfolio-items li:hover div.caption10{
+	bottom: 7px; /* direction Y */
+	right: 7px;/* direction X */
+	width: 181px;
+	height: 130px;
+	/*opacity*/
+	opacity: 1;/* all browsers */
+	filter: alpha(opacity = 80); /* IE fix */
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+}
+
+/* Portfolio caption11
+--------------------------------------------*/
+.portfolio-items li div.caption11{
+	top: 7px; /* direction Y */
+	left: 7px;/* direction X */
+	width: 0px;
+	height: 0px;
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+}
+
+.portfolio-items li:hover div.caption11{
+	bottom: 7px; /* direction Y */
+	right: 7px;/* direction X */
+	width: 181px;
+	height: 130px;
+	/*opacity*/
+	opacity: 1;/* all browsers */
+	filter: alpha(opacity = 80); /* IE fix */
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+}
+
+/* Portfolio caption12
+--------------------------------------------*/
+.portfolio-items li div.caption12{
+	bottom: 7px; /* direction Y */
+	right: 7px;/* direction X */
+	width: 181px;
+	height: 130px;
+}
+
+.caption12 {
+   background-color: rgba(146,96,91,0.5);
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.3s ease-in 0.4s;
+   -moz-transition: all 0.3s ease-in 0.4s;
+   -o-transition: all 0.3s ease-in 0.4s;
+   -ms-transition: all 0.3s ease-in 0.4s;
+   transition: all 0.3s ease-in 0.4s;
+}
+.caption12 h3 {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: scale(10);
+   -moz-transform: scale(10);
+   -o-transform: scale(10);
+   -ms-transform: scale(10);
+   transform: scale(10);
+   -webkit-transition: all 0.3s ease-in-out 0.1s;
+   -moz-transition: all 0.3s ease-in-out 0.1s;
+   -o-transition: all 0.3s ease-in-out 0.1s;
+   -ms-transition: all 0.3s ease-in-out 0.1s;
+   transition: all 0.3s ease-in-out 0.1s;
+}
+.caption12 p {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: scale(10);
+   -moz-transform: scale(10);
+   -o-transform: scale(10);
+   -ms-transform: scale(10);
+   transform: scale(10);
+   -webkit-transition: all 0.3s ease-in-out 0.2s;
+   -moz-transition: all 0.3s ease-in-out 0.2s;
+   -o-transition: all 0.3s ease-in-out 0.2s;
+   -ms-transition: all 0.3s ease-in-out 0.2s;
+   transition: all 0.3s ease-in-out 0.2s;
+}
+.caption12 a.pf_button {
+   -webkit-transform: translateY(100px);
+   -moz-transform: translateY(100px);
+   -o-transform: translateY(100px);
+   -ms-transform: translateY(100px);
+   transform: translateY(100px);
+}
+
+.caption12:hover h3 {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -o-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+
+.caption12:hover p {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -o-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+.caption12:hover a.pf_button {
+   -webkit-transform: translateY(0px);
+   -moz-transform: translateY(0px);
+   -o-transform: translateY(0px);
+   -ms-transform: translateY(0px);
+   transform: translateY(0px);
+}
+
+
+/* Portfolio caption13
+--------------------------------------------*/
+.portfolio-items li div.caption13{
+	bottom: 7px; /* direction Y */
+	right: 7px;/* direction X */
+	width: 181px;
+	height: 130px;
+}
+
+.caption13 {
+   background-color: rgba(146,96,91,0.5);
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.3s ease-in 0.4s;
+   -moz-transition: all 0.3s ease-in 0.4s;
+   -o-transition: all 0.3s ease-in 0.4s;
+   -ms-transition: all 0.3s ease-in 0.4s;
+   transition: all 0.3s ease-in 0.4s;
+}
+.caption13 h3 {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: scale(0);
+   -moz-transform: scale(0);
+   -o-transform: scale(0);
+   -ms-transform: scale(0);
+   transform: scale(0);
+   -webkit-transition: all 0.3s ease-in-out 0.1s;
+   -moz-transition: all 0.3s ease-in-out 0.1s;
+   -o-transition: all 0.3s ease-in-out 0.1s;
+   -ms-transition: all 0.3s ease-in-out 0.1s;
+   transition: all 0.3s ease-in-out 0.1s;
+}
+.caption13 p {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: scale(0);
+   -moz-transform: scale(0);
+   -o-transform: scale(0);
+   -ms-transform: scale(0);
+   transform: scale(0);
+   -webkit-transition: all 0.3s ease-in-out 0.2s;
+   -moz-transition: all 0.3s ease-in-out 0.2s;
+   -o-transition: all 0.3s ease-in-out 0.2s;
+   -ms-transition: all 0.3s ease-in-out 0.2s;
+   transition: all 0.3s ease-in-out 0.2s;
+}
+
+.caption13:hover h3 {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -o-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+
+.caption13:hover p {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -o-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+
+
+/* Portfolio caption14
+--------------------------------------------*/
+.portfolio-items li div.caption14{
+	bottom: 7px; /* direction Y */
+	right: 7px;/* direction X */
+	width: 181px;
+	height: 130px;
+}
+
+.caption14 {
+   background-color: rgba(146,96,91,0.5);
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.3s ease-in 0.4s;
+   -moz-transition: all 0.3s ease-in 0.4s;
+   -o-transition: all 0.3s ease-in 0.4s;
+   -ms-transition: all 0.3s ease-in 0.4s;
+   transition: all 0.3s ease-in 0.4s;
+}
+.caption14 h3 {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: translateY(-200px);
+   -moz-transform: translateY(-200px);
+   -o-transform: translateY(-200px);
+   -ms-transform: translateY(-200px);
+   transform: translateY(-200px);
+   -webkit-transition: all 0.6s ease-in-out;
+   -moz-transition: all 0.6s ease-in-out;
+   -o-transition: all 0.6s ease-in-out;
+   -ms-transition: all 0.6s ease-in-out;
+   transition: all 0.6s ease-in-out;
+}
+.caption14 p {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: translateY(200px);
+   -moz-transform: translateY(200px);
+   -o-transform: translateY(200px);
+   -ms-transform: translateY(200px);
+   transform: translateY(200px);
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+
+.caption14:hover h3 {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -o-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+
+.caption14:hover p {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -o-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+
+/* Portfolio caption15
+--------------------------------------------*/
+.portfolio-items li div.caption15{
+	bottom: 7px; /* direction Y */
+	right: 7px;/* direction X */
+	width: 181px;
+	height: 130px;
+}
+
+.caption15 {
+   background-color: rgba(146,96,91,0.5);
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transition: all 0.3s ease-in 0.4s;
+   -moz-transition: all 0.3s ease-in 0.4s;
+   -o-transition: all 0.3s ease-in 0.4s;
+   -ms-transition: all 0.3s ease-in 0.4s;
+   transition: all 0.3s ease-in 0.4s;
+}
+.caption15 h3 {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: translateX(200px);
+   -moz-transform: translateX(200px);
+   -o-transform: translateX(200px);
+   -ms-transform: translateX(200px);
+   transform: translateX(200px);
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+.caption15 p {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   -webkit-transform: translateX(-200px);
+   -moz-transform: translateX(-200px);
+   -o-transform: translateX(-200px);
+   -ms-transform: translateX(-200px);
+   transform: translateX(-200px);
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+
+.caption15:hover h3 {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -o-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+
+.caption15:hover p {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -o-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition-delay: 0.2s;
+   -moz-transition-delay: 0.2s;
+   -o-transition-delay: 0.2s;
+   -ms-transition-delay: 0.2s;
+   transition-delay: 0.2s;
+}
+
+
+/* Caption background
+-----------------------------------------*/
+
+/*----===----*/
+.ctn_blue{
+	background: #0877CC !important;/* IE fix */
+	background: rgba(8,119,204, 0.85) !important;
+	color: #fff !important;}
+
+.ctn_blue .pf_button{	border: 1px solid #0666B4 !important;}
+
+/*----===----*/
+.ctn_green{
+	background: #5D8C00 !important;/* IE fix */
+	background: rgba(93,140,0, 0.85) !important;
+	color: #fff !important;}
+
+.ctn_green .pf_button{	border: 1px solid #607B0E !important;}
+
+/*----===----*/
+.ctn_brown{
+	background: #A52A2A !important;/* IE fix */
+	background: rgba(165,42,42, 0.85) !important;
+	color: #fff !important;}
+
+.ctn_brown .pf_button{	border: 1px solid #7B1F1F !important;}
+
+/*----===----*/
+.ctn_darkslategray{
+	background: #483D8B !important;/* IE fix */
+	background: rgba(72,61,139, 0.85) !important;
+	color: #fff !important;}
+
+.ctn_darkslategray .pf_button{	border: 1px solid #3A3271 !important;}
+
+/*----===----*/
+.ctn_indianred{
+	background: #D76060 !important;/* IE fix */
+	background: rgba(215,96,96, 0.85) !important;
+	color: #fff !important;}
+
+.ctn_indianred .pf_button{	border: 1px solid #B93636 !important;}
+
+/*----===----*/
+.ctn_white{
+	background: #fff !important;/* IE fix */
+	background: rgba(255,255,255, 0.75) !important;
+	color: #333 !important;
+	text-shadow: none !important;}
+
+.ctn_white h3{	text-shadow: none !important;}
+.ctn_white .pf_button{	border: 1px solid #555 !important;}
+
+/*----===----*/
+.ctn_teal{
+	background: #008989 !important;/* IE fix */
+	background: rgba(0,137,137, 0.85) !important;
+	color: #fff !important;}
+
+.ctn_teal .pf_button{	border: 1px solid #007171 !important;}
+
+/*----===----*/
+.ctn_orange{
+	background: #FF8C00 !important;/* IE fix */
+	background: rgba(255,140,0, 0.75) !important;
+	color: #fff !important;}
+
+.ctn_orange .pf_button{	border: 1px solid #CF7200 !important;}
+
+/*----===----*/
+.ctn_blueviolet{
+	background: #8A2BE2 !important;/* IE fix */
+	background: rgba(138,43,226, 0.75) !important;
+	color: #fff !important;}
+
+.ctn_blueviolet .pf_button{	border: 1px solid #6A21AE !important;}
+
+/*----===----*/
+.ctn_pink{
+	background: #FF69B4 !important;/* IE fix */
+	background: rgba(255,105,180, 0.80) !important;
+	color: #fff !important;}
+
+.ctn_pink .pf_button{	border: 1px solid #CC5490 !important;}
+
+/*----===----*/
+.ctn_indigo{
+	background: #4B0082 !important;/* IE fix */
+	background: rgba(75,0,130, 0.75) !important;
+	color: #fff !important;}
+
+.ctn_pink .pf_button{	border: 1px solid #430073 !important;}
+
+/*----===----*/
+.ctn_slateblue{
+	background: #6A5ACD !important;/* IE fix */
+	background: rgba(106,90,205, 0.75) !important;
+	color: #fff !important;}
+.ctn_slateblue .pf_button{	border: 1px solid #5448A4 !important;}
+
+/* alain  rajout slide show page accueil */
+   
+   
+html,body {   margin: 0;   padding: 0;}
+.slider {   width: 700px;   margin: 2em auto;}
+.slider-wrapper {   width: 100%;   height: 400px;   position: relative;}
+.slide {float: relative; position: absolute;width: 100%; height: 100%; opacity: 0; transition: opacity 3s linear;}
+.slider-wrapper > .slide:first-child {   opacity: 1;}
+
+/* alain  rajout slide show page accueil2 */
+
+#slideshow {
+	position: relative;
+	width: 640px;
+	height: 310px;
+	padding: 15px;
+	margin: 0 auto 2em;
+	border: 1px solid #ddd;
+	background: #FFF;
+	/* CSS3 effects */
+	background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+}
+ 
+/* avanced box-shadow*/
+
+#slideshow:before,
+#slideshow:after {
+	position: absolute;
+	bottom:16px;
+	z-index: -10;
+	width: 50%;
+	height: 20px;
+	content: " ";
+	background: rgba(0,0,0,0.1);
+	border-radius: 50%;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+}
+#slideshow:before {
+	left:0;
+	transform: rotate(-4deg);
+}
+#slideshow:after {
+	right:0;
+	transform: rotate(4deg);
+}
+
+/* gestion des dimensions et débordement du conteneur */
+#slideshow .container {
+	position:relative;
+	width: 640px;
+	height: 310px;
+	overflow: hidden;
+}
+	
+/* on prévoit un petit espace gris pour la timeline */
+#slideshow .container:after {
+	position:absolute;
+	bottom: 0; left:0;
+	content: " ";
+	width: 100%;
+	height: 1px;
+	background: #999;
+}
+/* 
+   le conteneur des slides
+   en largeur il fait 100% x le nombre de slides
+*/
+#slideshow .slider {
+	position: absolute;
+	left:0; top:0;
+	width: 700%;
+	height: 310px;
+}
+
+/* annulation des marges sur figure */
+#slideshow figure {
+	position:relative;
+	display:inline-block;
+	padding:0; margin:0;
+}
+/* petit effet de vignette sur les images */
+#slideshow figure:after {
+	position: absolute;
+	display:block;
+	content: " ";
+	top:0; left:0;
+	width: 100%; height: 100%;
+	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+}
+
+/* styles de nos légendes */
+#slideshow figcaption {
+	position:absolute;
+	left:0; right:0; bottom: 5px;
+	padding: 30px;
+	margin:0;
+	border-top: 1px solid rgb(225,225,225);
+	text-align:center;
+	letter-spacing: 0.05em;
+	word-spacing: 0.05em;
+	font-family: Georgia, Times, serif;
+	background: #fff;
+	background: rgba(255,255,255,0.7);
+	color: #555;
+	text-shadow: -1px -1px 0 rgba(255,255,255,0.3);
+}
+
+/* fonction d'animation, n'oubliez pas de prefixer ! */
+@-webkit-keyframes slider {
+0%, 20%, 100% { left: 0 }
+25%, 45% { left: -100% }
+50%, 70% { left: -200% }
+75%, 95% { left: -300% }
+}
+@-moz-keyframes slider {
+0%, 20%, 100% { left: 0 }
+25%, 45% { left: -100% }
+50%, 70% { left: -200% }
+75%, 95% { left: -300% }
+}
+@-o-keyframes slider {
+0%, 20%, 100% { left: 0 }
+25%, 45% { left: -100% }
+50%, 70% { left: -200% }
+75%, 95% { left: -300% }
+}
+@keyframes slider {
+0%, 20%, 100% { left: 0 }
+25%, 45% { left: -100% }
+50%, 70% { left: -200% }
+75%, 95% { left: -300% }
+}
+/* complétez le sélecteur : */
+#slideshow .slider {
+	/* ... avec la propriété animation */
+	animation: slider 32s infinite;
+}
+
+#timeline {
+	position: absolute;
+	background: #999;
+	bottom: 15px;
+	left: 15px;
+	height: 1px;
+	background: rgb(214,98,13);
+	background: rgba(214,98,13,.8);
+	width: 0;
+	/* fonction d'animation */
+	animation: timeliner 32s infinite;
+}
+
+@keyframes timeliner {
+	0%, 25%, 50%, 75%, 100%	{ width: 0;		}
+	20%, 45%, 70%, 90%		{ width: 640px;	}
+}
+
+@keyframes figcaptionner {
+	0%, 25%, 50%, 75%, 100%						{ bottom: -55px;	}
+	5%, 20%, 30%, 45%, 55%, 70%, 80%, 95%		{ bottom: 5px;		}
+}
+
+/* ajouter à l'élément : */
+#slideshow figcaption {
+	/* ... la propriété animation */
+	animation: figcaptionner 32s infinite;
+}
+
+
+/* Portfolio */
+
+.portfolio {
+	margin-top: inherit;
+}
+
+.portfolio-inner .mix {
+    display: none;
+}
+
+ul.portfolio {
+    padding: 0;
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 8px;
+    text-align: center;
+}
+
+ul.portfolio li {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 8px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+ul.portfolio li:hover {
+    color: #000;
+    border: none;
+}
+
+ul.portfolio li.active {
+    color: #ffffff;
+    background-color: #00547B;
+    padding: 5px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
+}
+
+
+#actualitesBlue {
+    float: right;
+    margin-top: 20px;
+    width: 50%;
+    min-height: 250px
+}

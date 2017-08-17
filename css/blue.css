@@ -1,0 +1,17 @@
+
+/*---------------------------------------------------------------*/
+/* HEADER 
+/*---------------------------------------------------------------*/
+#header .header-holder {background:#0078AF url(../elements_decors/bg-header-holder.jpg) 0 0 repeat-x !important; height: 80px;}
+.big-banner #header .header-holder {background:#0078AF url(../elements_decors/bg-big-header-holder.png) 0 0 repeat-x !important;}
+.top-block {background:#00547B !important;}
+
+
+
+/*---------------------------------------------------------------*/
+/* FOOTER
+/*---------------------------------------------------------------*/
+#footer {background:#0078AF url(../elements_decors/bg-footer.jpg) repeat-x !important;}
+#footer_bottom {background:#004668 url(../elements_decors/bg-footer-bottom.jpg) repeat-x !important;color: #868686 !important;}
+
+
