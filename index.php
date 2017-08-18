@@ -22,8 +22,6 @@
             <link href="css/style.css"  rel="stylesheet" type="text/css"  /> 
             <!-- gere la position des sections -->
             <!-- for dynamic sections -->
-            <script language="JavaScript1.2" src="js/slider.js">
-            </script>
             <script src="js/jquery-2.1.3.min.js">
             </script>
             <script type="text/javascript" src="js/plugin.js">
@@ -63,45 +61,37 @@
                       <!-- ***************** - affichage bandeau "marge"- ***************** -->
                       <ul id="menu-main-nav">
                         <?php
-$file = fopen("./fichiers/bandeau.txt", "r");
-if (!$file) {
-print "<p>Problème, prévenez le Webmaster</p>";
-exit;
-}
-$nb = 0;
-while (!feof($file)) {
-if ($nb > 7)
-break;
-$line = fgets($file, 1024);
-$zone = explode("\t", $line);
-if (!isset($zone[1])) {
-$zone[1] = "";
-}
-if ($zone[0] != "" and $nb <= 7) {
-print("<li><a href='./fichiers/pdf_bandeau/" . $zone[1] . "'><strong>" . $zone[0] . "</strong></a>
-</li>\n");
-$nb = $nb + 1;
-}
-}
+if(file_exists("./fichiers/bandeau.txt")){
+  $file = fopen("./fichiers/bandeau.txt", "r");
+  if (!$file) {
+      print "<p>Problème, prévenez le Webmaster</p>";
+      exit;
+    }
+    $nb = 0;
+    while (!feof($file)) {
+    if ($nb > 7)
+      break;
+    $line = fgets($file, 1024);
+    $zone = explode("\t", $line);
+    if (!isset($zone[1])) {
+      $zone[1] = "";
+    }
+    if ($zone[0] != "" and $nb <= 7) {
+      print("<li><a target='_blank' href='./fichiers/pdf_bandeau/" . $zone[1] . "'><strong>" . $zone[0] . "</strong></a>
+      </li>\n");
+      $nb = $nb + 1;
+    }
+  }
 fclose($file);
+}
+if (isset($_SERVER['PHP_AUTH_USER']) AND isset($_SERVER['PHP_AUTH_PW']))
+{
+print_r($_SERVER['REMOTE_USER']);
+    print("<li><a target='_blank' href='./fichiers/pdf_bandeau/cotisations_ascc.xlsm'><strong>Login</strong></a>
+      </li>");
+}
+
 ?>
-                        <!-- <li>
-<div>
-<span style="cursor:default; color: #98DCE9">
-<strong>Espace perso</strong>
-<span id="userArea">
-<a href="#" style="display:inline">
-<span id="create-account" class="navi-description">Créer un compte</span>
-</a>
-| 
-<a href="#" style="display:inline">
-<span id="login-button" class="navi-description">Connexion</span>
-</a>
-</span> 
-</span>
-</div>
-</li>
--->
                       </ul>
                       <!-- ***************** - END Main Navigation - ***************** -->
                     </div>
@@ -111,6 +101,8 @@ fclose($file);
                 </div>
                 <!-- end header-holder -->
               </div>
+              <?php
+              print_r($_SERVER);?>
               <!-- end header -->
               <div id="main">
                 <div class="main-area home-main-area">
@@ -119,6 +111,7 @@ fclose($file);
                       <!-- ***************** - affichage "actualités" - ***************** -->
                       <thead>
                         <?php
+if(file_exists("./fichiers/alertes.txt")){
 $file = fopen("./fichiers/alertes.txt", "r");
 if (!$file) {
 print "<p>Problème, prévenez le Webmaster</p>";
@@ -126,10 +119,14 @@ exit;
 }
 while (!feof($file)) {
 $line = fgets($file, 1024);
-$zone = explode("\t", $line);
-print("<h3><center><B><font size='14'>" . $zone[0] . "</center></font></h3>\n");
+if (!empty(trim($line))) {
+print("<h3><center><B><font size='14'>" . $line . "</center></font></h3>\n");
+}else{
+  print("<br>");
+}
 }
 fclose($file);
+}
 ?>
                       </thead>
                       <br>
@@ -141,6 +138,7 @@ fclose($file);
                           <div id="sliderFrame">
                             <div id="slider">
                               <?php
+if(file_exists("./fichiers/slide_photos.txt")){
 $file = fopen("fichiers/slide_photos.txt", "r");
 if (!$file) {
 print "<p>Problème, prévenez le Webmaster</p>";
@@ -149,11 +147,12 @@ exit;
 while (!feof($file)) {
 $line = fgets($file, 1024);
 $zone = explode("\t", $line);
-print("<a id ='sliderImage' href='fichiers/pdf_actualites/" . $zone[1] . "'>\n
+print("<a id ='sliderImage' target='_blank' href='fichiers/pdf_actualites/" . $zone[1] . "'>\n
 <img src='fichiers/contenu_slide/" . $zone[0] . "' alt='" . $zone[2] . "'/>\n
 </a>");
 }
 fclose($file);
+}
 ?>
                             </div>
                           </div>
@@ -165,6 +164,7 @@ fclose($file);
                           </center>
                           <div id="actualitesBlue">
                             <?php
+if(file_exists("./fichiers/actualites.txt")){
 $file = fopen("./fichiers/actualites.txt", "r");
 if (!$file) {
 print "<p>Problème, prévenez le Webmaster</p>";
@@ -174,16 +174,19 @@ while (!feof($file)) {
 $line = fgets($file, 1024);
 $zone = explode("\t", $line);
 if (isset($zone[1])) {
-print("<h3 style=><center><B><font size='14'>&nbsp;<a href='./fichiers/pdf_actualites/" . $zone[1] . "'>" . $zone[0] . "</a></center></font></h3>\n");
+print("<h3 style=><center><B><font size='14'>&nbsp;<a target='_blank' href='./fichiers/pdf_actualites/" . $zone[1] . "'>" . $zone[0] . "</a></center></font></h3>\n");
 } else {
 print("<br>");
 }
 }
 fclose($file);
+}
 ?>
+
                           </div>
                         </div>
                       </section>
+
                       <!-- ========================== affichage es icones "sections"] ========================== -->
                       <section id="portfolio" class="portfolio section-space-padding">
                         <div class="row">
@@ -191,6 +194,7 @@ fclose($file);
                             <li class='filter' data-filter="all">Tout
                             </li>  
                             <?php
+if(file_exists("./fichiers/sections.txt")){
 $file = fopen("fichiers/sections.txt", "r");
 if (!$file) {
 print "<p>Problème, prévenez le Webmaster</p>";
@@ -205,6 +209,7 @@ print("<li class='filter' data-filter='." . $label . "'>" . $zone[0] . "</li>");
 }
 }
 fclose($file);
+}
 ?>
                           </ul>
                         </div>   
@@ -213,6 +218,7 @@ fclose($file);
                         <ul class="portfolio-items">
                           <div class="portfolio-inner">
                             <?php
+if(file_exists("./fichiers/sections.txt")){
 $file = fopen("fichiers/sections.txt", "r");
 if (!$file) {
 print "<p>Problème, prévenez le Webmaster</p>";
@@ -227,7 +233,7 @@ $zone[2] = isset($zone[2]) ? $zone[2] : "";
 if (empty($zone[1])) {
 $section = str_replace(' ', '_', $zone[0]);
 } else if (!empty($zone[1]) and !empty($zone[2])) {
-print("<div class='mix " . $section . "'><a href='./fichiers/pdf_sections/" . $zone[1] . "' ><li class='img_item'>\n
+print("<div class='mix " . $section . "'><a target='_blank' href='./fichiers/pdf_sections/" . $zone[1] . "' ><li class='img_item'>\n
 <div class='caption9'>\n
 <h2>" . $zone[0] . "</h2>\n
 </div>\n
@@ -236,6 +242,7 @@ print("<div class='mix " . $section . "'><a href='./fichiers/pdf_sections/" . $z
 }
 }
 fclose($file);
+}
 ?>
                           </div>
                           </section>
@@ -253,6 +260,7 @@ fclose($file);
                             </center>
                             <br>
                             <?php
+if(file_exists("./fichiers/presentation.txt")){
 $file = fopen("./fichiers/presentation.txt", "r");
 if (!$file) {
 print "<p>Problème, prévenez le Webmaster</p>";
@@ -260,17 +268,13 @@ exit;
 }
 while (!feof($file)) {
 $line = fgets($file);
-//  print($line."<br>");
 print("<em>" . $line . "</em><br>");
 }
 fclose($file);
+}
 ?>
                             <br />
                             <br />
-                            <center>
-                              <strong>REJOIGNEZ, VOUS AUSSI, L'ASSOCIATION SPORTIVE DU CREDIT COOPERATIF!
-                              </strong>
-                            </center>
                           </span>
                         </div>
                         <!-- end callout-wrap -->
@@ -324,7 +328,7 @@ fclose($file);
                           <div class="one_fourth">
                             <h3>Ecrivez-nous
                             </h3>
-                            <a href="mailto:famart.alain@sfr.fr" target="_blank" >ascc@credit-cooperatif.coop
+                            <a href="mailto:famart.alain@sfr.fr">ascc@credit-cooperatif.coop
                             </a>
                             <br />
                           </div>
@@ -351,33 +355,5 @@ fclose($file);
                   <!-- end footer -->
                   <!-- /***************** - END Top Footer Area - ***************** --> 
                   <!-- /***************** - Bottom Footer - ***************** --> 
-                  <div id="loginDialog" title="Login" style="display:none">
-                    <form id="loginForm">
-                      <fieldset>
-                        <legend>Informations de connexion
-                        </legend>
-                        <label for="login">login
-                        </label>
-                        <input type="text" id="login" name="login" />
-                        <br />
-                        <label for="password">mot de passe
-                        </label>
-                        <input type="password" id="password" name="password" />     
-                      </fieldset>
-                      <a href="https://www.ASCC.fr/ASCC/recuperation_login.php">Login oublié?
-                      </a> 
-                      <br />
-                      <a href="https://www.ASCC.fr/ASCC/recuperation_motdepasse.php">Mot de passe oublié?
-                      </a>
-                    </form>
-                    <div id="loading" style="display:none">
-                      <img src="images/loading_grey.gif" style="width:20px" />
-                    </div>
-                    <div id="errorMessage">
-                    </div>
-                  </div>
-                  <div id="logoutDialog" title="Logout" style="display:none">
-                    Etes-vous sur de vouloir vous déconnecter?
-                  </div>
                   </body>
                 </html>
