@@ -1,0 +1,4 @@
+AuthName "Private area - superadmin only"
+AuthUserFile C:\wamp64\www\ASCC-New\fichiers\pdf_bandeau/.htpasswd
+AuthType Basic
+Require valid-user
